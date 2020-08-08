@@ -1,0 +1,37 @@
+{
+  "name": "workshop-welcome-screen",
+  "title": "Foundry Workshop Welcome Screen",
+  "description": "Consolidated Welcome Screen for all Foundry Workshop modules, providing changelogs for all and allowing to browse and install new modules.",
+  "author": "Forien — Forien#2130",
+  "authors": [
+    {
+      "name": "Forien",
+      "url": "https://www.patreon.com/foundryworkshop"
+    }
+  ],
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "0.6.5",
+  "url": "https://github.com/Forien/foundryvtt-welcome-screen",
+  "manifest": "https://raw.githubusercontent.com/Forien/foundryvtt-welcome-screen/master/module.json",
+  "download": "https://github.com/Forien/foundryvtt-welcome-screen/releases/download/v0.1.0/v0.1.0.zip",
+  "readme": "https://github.com/Forien/foundryvtt-welcome-screen/blob/v0.1.0/README.md",
+  "changelog": "https://github.com/Forien/foundryvtt-welcome-screen/blob/v0.1.0/changelog.md",
+  "bugs": "https://github.com/Forien/foundryvtt-welcome-screen/issues",
+  "scripts": [
+    "./libs/showdown.js"
+  ],
+  "esmodules": [
+    "./modules/init.js"
+  ],
+  "styles": [
+    "./styles/style.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

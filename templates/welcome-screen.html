@@ -1,0 +1,71 @@
+<div class="container {{#if wfrp}}wfrp{{/if}}">
+    <h1>Thank you for installing Foundry Workshop's modules!
+        <span class="social">
+                <a href="https://discord.gg/Ftrvs77" class="hinted" data-tooltip="Join our Discord!"><i class="fa-discord fab"></i></a>
+                <a href="https://www.patreon.com/foundryworkshop" class="hinted" data-tooltip="Support our modules on Patreon!"><i class="fa-patreon fab"></i></a>
+                <a href="https://www.youtube.com/channel/UCe9Uw2BoR4UpMsh80GoRYuQ" class="hinted" data-tooltip="Check out our Videos!"><i class="fa-youtube fab"></i></a>
+        </span>
+    </h1>
+    <nav class="navigation items">
+        {{#each modules}}
+        <a class="item" data-tab="{{this.id}}">{{this.name}}
+            {{#unless this.installed}}
+                <i class="fas fa-chevron-circle-down hinted top" data-tooltip="Module not installed"></i>
+            {{else}}
+                {{#unless this.enabled}}
+                    <i class="fas fa-exclamation-circle hinted top" data-tooltip="Module not enabled!"></i>
+                {{else}}
+                    {{#if this.newerAvailable}}
+                        <i class="fas fa-question-circle version hinted top" data-tooltip="New version available!"></i>
+                    {{else}}
+                        {{#if this.unread}}
+                            <i class="fas fa-question-circle update hinted top" data-tooltip="New update!"></i>
+                        {{/if}}
+                    {{/if}}
+                {{/unless}}
+            {{/unless}}
+        </a>
+        {{/each}}
+    </nav>
+    <section class="content">
+        <section class="description">
+            <p>Thank you for installing one of our modules! We are a modding team born from FVTT community.</p>
+            <p>On the left side you will find full list of all our modules, check them out, maybe you will like one or two. Feel free to join our <a href="https://discord.gg/Ftrvs77">Discord</a> server to chat about Foundry, modules, ask questions and report bugs. Below you will find details regarding currently selected Module and it's Patch Notes. </p>
+            <p>We are devoting a lot of our time to build high quality modules and contribute to the Foundry community. Presently, this amounts to many hours a day. We recognize that not everyone has the resources to do so &ndash; which is fine! &ndash; <strong>but if you can safely afford that, please consider <a href="https://www.patreon.com/foundryworkshop">becoming a Patron</a></strong> and supporting module development. All contributions help, regardless of level.&nbsp; In return we offer early access to new modules and major updates, discord roles, patron-only voting power and more.</p>
+            <p style="float: right; font-weight: bold">Best regards,<br />Eadorin and Forien</p>
+        </section>
+        <section class="tabs">
+            {{#each modules}}
+            <div class="tab" data-tab="{{this.id}}">
+                <div>
+                    <h2>{{this.name}} Details</h2>
+                    <div class="details">
+                        <span>Module on <a href="https://foundryvtt.com/packages/{{this.id}}/">FoundryVTT</a>, <a href="{{this.url}}">GitHub</a></span>
+                        <span class="links">
+                        {{#if this.readme}}<a href="{{this.readme}}">Readme</a>{{/if}}
+                        {{#if this.bugs}}<a href="{{this.bugs}}">Issue Tracker</a>{{/if}}
+                        {{#if this.wiki}}<a href="{{this.wiki}}">Wiki</a>{{/if}}
+                        </span>
+                        <span>Version: <strong>{{{this.version}}}</strong> {{#if newerAvailable}}(available version: <strong>{{this.remoteVersion}}</strong>){{/if}}</span>
+                        {{#if (and this.installed ../isGM)}}{{#unless this.enabled}}<a class="enable" data-id="{{this.id}}">Click to Enable module</a>{{/unless}}{{/if}}
+                    </div>
+                </div>
+                <div>
+                    {{#if this.installed}}
+                    <h2>Patch Notes</h2>
+                    <div class="changelog">
+                        {{{this.changelogContent}}}
+                    </div>
+                    {{else}}
+                    <h2>Module not installed</h2>
+                    <div>
+                        {{{this.description}}}
+                        {{#if ../isGM}}<a class="install" data-id="{{this.id}}">Install</a>{{/if}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </section>
+    </section>
+</div>

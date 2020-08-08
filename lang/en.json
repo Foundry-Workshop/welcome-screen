@@ -1,0 +1,17 @@
+{
+  "WorkshopWelcomeScreen": {
+    "Settings": {
+      "playersWelcomeScreen": {
+        "name": "Display Welcome Screen to Players",
+        "hint": "Uncheck to prevent players from seeing Welcome Screen on log in after an update."
+      },
+      "showOnVersion": {
+        "name": "Display Welcome Screen on Version Update:",
+        "hint": "Choose which type of updates should fire a Welcome screen with patch notes. Same setting will be used for notification icon in the Sidebar. Star represents version parts that will trigger the screen.",
+        "all": "All (*.*.*)",
+        "minor": "Minor (*.*.0)",
+        "major": "Major (*.0.0)"
+      }
+    }
+  }
+}
