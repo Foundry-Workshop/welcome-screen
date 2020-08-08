@@ -9,15 +9,15 @@
       "url": "https://www.patreon.com/foundryworkshop"
     }
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minimumCoreVersion": "0.6.0",
   "compatibleCoreVersion": "0.6.5",
-  "url": "https://github.com/Forien/foundryvtt-workshop-welcome-screen",
-  "manifest": "https://raw.githubusercontent.com/Forien/foundryvtt-workshop-welcome-screen/master/module.json",
-  "download": "https://github.com/Forien/foundryvtt-workshop-welcome-screen/releases/download/v1.0.1/v1.0.1.zip",
-  "readme": "https://github.com/Forien/foundryvtt-workshop-welcome-screen/blob/v1.0.1/README.md",
-  "changelog": "https://github.com/Forien/foundryvtt-workshop-welcome-screen/blob/v1.0.1/changelog.md",
-  "bugs": "https://github.com/Forien/foundryvtt-workshop-welcome-screen/issues",
+  "url": "https://github.com/Foundry-Workshop/welcome-screen",
+  "manifest": "https://raw.githubusercontent.com/Foundry-Workshop/welcome-screen/master/module.json",
+  "download": "https://github.com/Foundry-Workshop/welcome-screen/releases/download/v1.0.2/v1.0.2.zip",
+  "readme": "https://github.com/Foundry-Workshop/welcome-screen/blob/v1.0.2/README.md",
+  "changelog": "https://github.com/Foundry-Workshop/welcome-screen/blob/v1.0.2/changelog.md",
+  "bugs": "https://github.com/Foundry-Workshop/welcome-screen/issues",
   "scripts": [
     "./libs/showdown.js"
   ],
