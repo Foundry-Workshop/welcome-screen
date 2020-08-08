@@ -4,6 +4,7 @@
   #welcome-screen a[href] {
     color: #6b2bda; }
   #welcome-screen .window-content {
+    background: url("/ui/parchment.jpg") repeat !important;
     height: 100%; }
     #welcome-screen .window-content .container {
       height: 100%;
@@ -48,7 +49,7 @@
             text-shadow: 1px 1px 5px #7272F3;
             border-color: rgba(38, 19, 84, 0.86); }
           #welcome-screen .window-content .container .navigation a:hover {
-            text-shadow: 1px 1px 5px #7272F388;
+            text-shadow: 1px 1px 5px #7272F388 !important;
             border-color: rgba(38, 19, 84, 0.86); }
           #welcome-screen .window-content .container .navigation a .fas.fa-question-circle.update {
             color: green; }
@@ -142,8 +143,6 @@
               border: 2px dashed #6b2bda66;
               background: #6b2bda22;
               text-shadow: 0 0 8px #6b2bda44; }
-      #welcome-screen .window-content .container.wfrp {
-        background: url("/ui/parchment.jpg") repeat !important; }
     #welcome-screen .window-content .tooltip {
       display: block;
       height: 26px;

@@ -8,6 +8,7 @@
   }
 
   .window-content {
+    background: url("/ui/parchment.jpg") repeat !important;
     height: 100%;
 
     .container {
@@ -66,7 +67,7 @@
           }
 
           &:hover {
-            text-shadow: 1px 1px 5px #7272F388;
+            text-shadow: 1px 1px 5px #7272F388 !important; // important because screw wfrp4e
             border-color: rgba(38, 19, 84, 0.86);
           }
 
@@ -213,10 +214,6 @@
             }
           }
         }
-      }
-
-      &.wfrp {
-        background: url("/ui/parchment.jpg") repeat !important;
       }
     }
 
