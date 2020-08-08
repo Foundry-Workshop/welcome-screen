@@ -1,7 +1,7 @@
 # FoundryVTT - Welcome Screen
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/forien/foundryvtt-welcome-screen?style=for-the-badge) 
-![GitHub Releases](https://img.shields.io/github/downloads/Forien/foundryvtt-welcome-screen/latest/total?style=for-the-badge) 
-![GitHub All Releases](https://img.shields.io/github/downloads/Forien/foundryvtt-welcome-screen/total?style=for-the-badge&label=Downloads+total)  
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/forien/foundryvtt-workshop-welcome-screen?style=for-the-badge) 
+![GitHub Releases](https://img.shields.io/github/downloads/Forien/foundryvtt-workshop-welcome-screen/latest/total?style=for-the-badge) 
+![GitHub All Releases](https://img.shields.io/github/downloads/Forien/foundryvtt-workshop-welcome-screen/total?style=for-the-badge&label=Downloads+total)  
 **[Compatibility]**: *FoundryVTT* 0.6.0+  
 **[Systems]**: *any*  
 **[Languages]**: *English*  
@@ -10,7 +10,7 @@ This module [...] games played via Foundry Virtual Tabletop.
 
 ## Installation
 
-1. Install Welcome Screen using manifest URL: https://raw.githubusercontent.com/Forien/foundryvtt-welcome-screen/master/module.json
+1. Install Welcome Screen using manifest URL: https://raw.githubusercontent.com/Forien/foundryvtt-workshop-welcome-screen/master/module.json
 2. While loaded in World, enable **_Welcome Screen_** module.
 
 ## Usage
@@ -19,7 +19,7 @@ This module [...] games played via Foundry Virtual Tabletop.
 
 ## Future plans
 
-You can **always** check current and up-to-date [planned and requested features here](https://github.com/Forien/foundryvtt-welcome-screen/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
+You can **always** check current and up-to-date [planned and requested features here](https://github.com/Forien/foundryvtt-workshop-welcome-screen/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
 
 *If you have **any** suggestion or idea on new contents, hit me up on Discord!*
 
