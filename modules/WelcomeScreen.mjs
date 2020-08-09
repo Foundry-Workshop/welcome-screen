@@ -200,8 +200,9 @@ export class WelcomeScreen extends Application {
   }
 
   async testSetup() {
+    let response = {};
     try {
-      await fetch(SetupConfiguration.setupURL, {
+      response = await fetch(SetupConfiguration.setupURL, {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({})
@@ -210,7 +211,7 @@ export class WelcomeScreen extends Application {
       return false;
     }
 
-    return true;
+    return response.status !== 403;
   }
 
   static get instance() {
