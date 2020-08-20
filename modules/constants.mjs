@@ -55,6 +55,10 @@ let constants = {
     "target-enhancements": {
       name: "Target Enhancements",
       manifest: "https://raw.githubusercontent.com/eadorin/target-enhancements/master/module.json"
+    },
+    "workshop-party-unit-frames": {
+      name: "Workshop's Party Unit Frames",
+      manifest: "https://raw.githubusercontent.com/Foundry-Workshop/party-unit-frames/master/src/module.json"
     }
   }
 };

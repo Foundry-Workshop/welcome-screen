@@ -5,7 +5,8 @@
     color: #6b2bda; }
   #welcome-screen .window-content {
     background: url("/ui/parchment.jpg") repeat !important;
-    height: 100%; }
+    height: calc(100% - 30px);
+    overflow: visible; }
     #welcome-screen .window-content .container {
       height: 100%;
       display: grid;
@@ -22,6 +23,7 @@
           display: flex;
           width: 150px; }
           #welcome-screen .window-content .container h1 .social a {
+            position: relative;
             flex: 0 1 40px;
             margin: 0 6px; }
             #welcome-screen .window-content .container h1 .social a:hover {
@@ -30,7 +32,8 @@
       #welcome-screen .window-content .container .navigation {
         display: flex;
         flex-direction: column;
-        margin: 0 8px 0 0; }
+        overflow-y: auto;
+        margin: 0 4px 0 0; }
         #welcome-screen .window-content .container .navigation a {
           position: relative;
           flex: 0 1 30px;
@@ -39,11 +42,12 @@
           font-weight: bold;
           border: 2px solid #242443;
           border-radius: 4px;
-          margin: 6px;
+          margin: 4px;
           padding: 3px 14px;
           justify-content: center;
           align-items: center;
-          text-shadow: 2px 2px 4px #42426355; }
+          text-shadow: 2px 2px 4px #42426355;
+          min-width: 250px; }
           #welcome-screen .window-content .container .navigation a.active {
             color: rgba(56, 25, 109, 0.81);
             text-shadow: 1px 1px 5px #7272F3;
@@ -163,7 +167,12 @@
       font-weight: normal; }
     #welcome-screen .window-content .top .tooltip {
       bottom: auto;
-      top: -32px; }
+      left: auto;
+      right: 4px;
+      top: 6px;
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 4px; }
 
 .fab.fa-discord {
   color: #7289DA; }

@@ -10,7 +10,7 @@ export class WelcomeScreen extends Application {
       id: "welcome-screen",
       template: `modules/${constants.moduleName}/templates/welcome-screen.html`,
       resizable: false,
-      width: 940,
+      width: 1040,
       height: 720,
       title: `Module Updates - Welcome Screen`,
       tabs: [{navSelector: ".items", contentSelector: ".tabs"}]
@@ -74,20 +74,18 @@ export class WelcomeScreen extends Application {
           m.bugs = content.bugs ? content.bugs : m.bugs;
           m.readme = content.readme ? content.readme : m.readme;
           m.newerAvailable = isNewerVersion(m.remoteVersion, m.version);
-          if (m.installed) {
-            if (content.changelog !== undefined) {
-              try {
-                let res = await fetch(`/modules/${m.id}/changelog.md`);
-                let changelog = await res.text();
-                if (showdown) {
-                  let converter = new showdown.Converter();
-                  m.changelogContent = converter.makeHtml(changelog).replace(rx, '');
-                }
-              } catch (e) {
-              }
-            }
-          }
         } catch (e) {
+        }
+        if (m.installed) {
+          try {
+            let res = await fetch(`/modules/${m.id}/changelog.md`);
+            let changelog = await res.text();
+            if (showdown) {
+              let converter = new showdown.Converter();
+              m.changelogContent = converter.makeHtml(changelog).replace(rx, '');
+            }
+          } catch (e) {
+          }
         }
       }
       this.modules = modules;
