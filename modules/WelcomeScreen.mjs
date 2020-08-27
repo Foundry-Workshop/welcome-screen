@@ -270,9 +270,14 @@ export function addWelcomeScreenButton(html) {
      </button>`
   );
 
-  const helpHeader = html.find('h2:contains("Help Documentation")');
-  helpHeader.after(button);
-  button.on('click', () => WelcomeScreen.render())
+  if (isNewerVersion('0.6.6', game.data.version)) {
+    const helpHeader = html.find('h2:contains("Help Documentation")');
+    helpHeader.after(button);
+  } else {
+    const helpHeader = html.find('#settings-documentation');
+    helpHeader.prepend(button);
+  }
+  button.on('click', () => WelcomeScreen.render());
 
   return button;
 }
