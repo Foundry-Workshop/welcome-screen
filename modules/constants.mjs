@@ -59,6 +59,10 @@ let constants = {
     "workshop-party-unit-frames": {
       name: "Workshop's Party Unit Frames",
       manifest: "https://raw.githubusercontent.com/Foundry-Workshop/party-unit-frames/master/src/module.json"
+    },
+    "workshop-ammo-swapper": {
+      name: "Workshop's Ammo Swapper",
+      manifest: "https://raw.githubusercontent.com/Foundry-Workshop/ammo-swapper/master/src/module.json"
     }
   }
 };
