@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.7
+* CSS fix for notification icon
+
 ## v1.0.6
 * Added Workshop's Ammo Swapper
 * Bumped compatible core version to 0.6.6
